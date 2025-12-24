@@ -3,33 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مطعم المصطفى | الوشاش</title>
+    <title>مطعم المصطفى - الوشاش</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { font-family: 'Cairo', sans-serif; background: #f4f4f4; margin: 0; text-align: center; }
-        header { background: #1a1a1a; color: #c6a664; padding: 40px 20px; border-bottom: 4px solid #c6a664; }
-        .container { max-width: 500px; margin: auto; padding: 20px; }
-        .item-card { background: white; margin: 10px 0; padding: 15px; border-radius: 12px; display: flex; justify-content: space-between; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-right: 5px solid #c6a664; }
-        .price { color: #2e7d32; font-weight: 900; }
-        .btn { display: block; background: #c6a664; color: white; padding: 15px; text-decoration: none; border-radius: 50px; margin: 10px 0; font-weight: bold; }
-        .fb-btn { background: #1877f2; }
+        :root { --main-gold: #c6a664; --dark-bg: #1a1a1a; }
+        body { font-family: 'Cairo', sans-serif; background-color: #f4f4f4; margin: 0; color: #333; text-align: center; }
+        header { background: var(--dark-bg); color: white; padding: 30px 10px; border-bottom: 5px solid var(--main-gold); }
+        h1 { margin: 0; font-size: 2.2em; color: var(--main-gold); font-weight: 900; }
+        .sub-title { color: #ccc; margin-top: 5px; font-size: 1.1em; }
+        .container { max-width: 450px; margin: auto; padding: 15px; }
+        .section-header { background: #8e0000; color: white; padding: 12px; border-radius: 10px; margin: 20px 0; font-weight: bold; font-size: 1.2em; }
+        .item-card { background: white; margin: 12px 0; padding: 15px; border-radius: 15px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-right: 6px solid var(--main-gold); }
+        .price { color: #2e7d32; font-weight: 900; font-size: 1.2em; white-space: nowrap; }
+        .item-name { font-weight: 700; font-size: 1.1em; display: flex; align-items: center; gap: 8px; }
+        .btn { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 16px; text-decoration: none; border-radius: 50px; margin: 15px 0; font-weight: bold; font-size: 1.1em; color: white; box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
+        .btn-call { background-color: var(--main-gold); color: #1a1a1a; }
+        .btn-map { background-color: #333; }
+        footer { padding: 25px; font-size: 0.9em; color: #666; border-top: 1px solid #ddd; margin-top: 20px; }
     </style>
 </head>
 <body>
-    <header>
-        <h1>مطعم المصطفى</h1>
-        <p>ماكولات شعبية وموصلية - بغداد الوشاش</p>
-    </header>
-    <div class="container">
-        <div class="item-card"><span>🌯 صدر دجاج احمر</span> <span class="price">1,000 د.ع</span></div>
-        <div class="item-card"><span>🍳 جلفراي دجاج</span> <span class="price">1,000 د.ع</span></div>
-        <div class="item-card"><span>🥘 كبدة</span> <span class="price">1,000 د.ع</span></div>
-        <div class="item-card"><span>🧆 فلافل مشكل</span> <span class="price">750 د.ع</span></div>
-        
-        <a href="tel:07718723682" class="btn"><i class="fas fa-phone"></i> اتصل بنا الآن</a>
-        <a href="https://www.google.com/maps/search/?api=1&query=مطعم+المصطفى+للمأكولات+الشعبية+والموصلية+الوشاش" class="btn" style="background:#333;"><i class="fas fa-map-marked-alt"></i> موقعنا على الخريطة</a>
-        <a href="https://www.facebook.com/share/16HVJLcsix/" class="btn fb-btn"><i class="fab fa-facebook"></i> صفحتنا على فيسبوك</a>
+
+<header>
+    <h1>مطعم المصطفى</h1>
+    <div class="sub-title">للمأكولات الشعبية والموصلية - بغداد الوشاش</div>
+</header>
+
+<div class="container">
+    <div class="section-header">قائمة السندويشات</div>
+    
+    <div class="item-card">
+        <div class="item-name">🌯 صدر دجاج احمر</div>
+        <div class="price">1,000 د.ع</div>
     </div>
+
+    <div class="item-card">
+        <div class="item-name">🍳 جلفراي دجاج</div>
+        <div class="price">1,000 د.ع</div>
+    </div>
+
+    <div class="item-card">
+        <div class="item-name">🥘 كبدة دجاج</div>
+        <div class="price">1,000 د.ع</div>
+    </div>
+
+    <div class="item-card">
+        <div class="item-name">🧆 فلافل مشكل</div>
+        <div class="price">750 د.ع</div>
+    </div>
+
+    <div class="item-header" style="margin-top:30px;"></div>
+
+    <div class="contact-section">
+        <a href="tel:07718723682" class="btn btn-call">
+            <i class="fas fa-phone-alt"></i> اتصل بنا الآن
+        </a>
+        
+        <a href="https://www.google.com/maps/search/%D8%A7%D9%84%D9%85%D8%B5%D8%B7%D9%81%D9%89+%D9%84%D9%84%D9%85%D8%A7%D9%83%D9%88%D9%84%D8%A7%D8%AA+%D8%A7%D9%84%D8%B4%D8%B$2%D8%A8%D9%8A%D8%A9+%D9%88%D8%A7%D9%84%D9%85%D9%88%D8%B$3%D9%84%D9%8A%D8%A9+%D8%A7%D9%84%D9%88%D8%B$4%D8%A7%D8%B$4" target="_blank" class="btn btn-map">
+            <i class="fas fa-map-marked-alt"></i> موقعنا على الخريطة
+        </a>
+    </div>
+
+    <footer>
+        <strong>بغداد - الوشاش - شارع 10</strong><br>
+        أهلاً وسهلاً بكم في مطعمكم المفضل
+    </footer>
+</div>
+
 </body>
 </html>
