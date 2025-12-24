@@ -4,36 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مطعم المصطفى - المذاق الأصيل</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Amiri:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
             --main-gold: #c6a664;
             --dark-red: #8e0000;
-            --soft-bg: #fdfaf6;
-            --text-color: #2c3e50;
+            --bg-color: #fdfdfd;
         }
+        body { font-family: 'Cairo', sans-serif; background-color: var(--bg-color); margin: 0; color: #333; }
+        header { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'); background-size: cover; background-position: center; color: white; padding: 40px 20px; border-bottom: 5px solid var(--main-gold); }
+        h1 { margin: 0; font-size: 2.5em; font-weight: 900; color: var(--main-gold); }
+        .container { max-width: 600px; margin: auto; padding: 15px; }
+        .section-title { background: var(--dark-red); color: white; padding: 10px; border-radius: 8px; margin: 20px 0; font-weight: bold; }
+        .item-card { background: white; margin: 10px 0; padding: 15px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-right: 5px solid var(--main-gold); }
+        .price { color: #2e7d32; font-weight: 900; font-size: 1.1em; }
+        .contact-buttons { margin-top: 30px; }
+        .btn { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 15px; text-decoration: none; border-radius: 50px; margin: 10px 0; font-weight: bold; font-size: 1.1em; transition: 0.3s; }
+        .btn-call { background-color: #2e7d32; color: white; }
+        .btn-map { background-color: #4285F4; color: white; }
+        .btn-fb { background-color: #1877f2; color: white; }
+        footer { padding: 20px; font-size: 0.9em; color: #777; }
+    </style>
+</head>
+<body>
 
-        body {
-            font-family: 'Cairo', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--soft-bg);
-            color: var(--text-color);
-        }
+<header>
+    <h1>مطعم المصطفى</h1>
+    <p>للماكولات الشعبية والموصلية - الوشاش</p>
+</header>
 
-        /* رأس الصفحة - فخامة وبساطة */
-        header {
-            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-            border-bottom: 5px solid var(--main-gold);
-            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        }
+<div class="container">
+    <div class="section-title">قائمة السندويشات</div>
+    <div class="item-card"><span>🍗 صدر دجاج أحمر</span> <span class="price">1,000 د.ع</span></div>
+    <div class="item-card"><span>🍳 جلفراي دجاج</span> <span class="price">1,000 د.ع</span></div>
+    <div class="item-card"><span>🥘 كبدة مميزة</span> <span class="price">1,000 د.ع</span></div>
+    <div class="item-card"><span>🌯 كباب عروك</span> <span class="price">1,000 د.ع</span></div>
+    <div class="item-card"><span>🧆 فلافل مشكل</span> <span class="price">750 د.ع</span></div>
 
-        header h1 {
-            font-family: 'Amiri', serif;
+    <div class="section-title">المشروبات</div>
+    <div class="item-card"><span>🥤 بيبسي / سفن</span> <span class="price">500 د.ع</span></div>
+    <div class="item-card"><span>💧 ماء معدني</span> <span class="price">250 د.ع</span></div>
+
+    <div class="contact-buttons">
+        <a href="tel:07718723682" class="btn btn-call"><i class="fas fa-phone-alt"></i> اتصل بنا الآن</a>
+        
+        <a href="https://www.google.com/maps/search/?api=1&query=مطعم+المصطفى+الوشاش+بغداد" target="_blank" class="btn btn-map"><i class="fas fa-map-marker-alt"></i> موقعنا على الخريطة</a>
+        
+        <a href="https://www.facebook.com/share/16HVJLcsix/" target="_blank" class="btn btn-fb"><i class="fab fa-facebook-f"></i> صفحتنا على فيسبوك</a>
+    </div>
+
+    <footer>
+        <p>بغداد - الوشاش - شارع 10</p>
+        <p>&copy; 2025 مطعم المصطفى - جميع الحقوق محفوظة</p>
+    </footer>
+</div>
+
+</body>
+</html>
             font-size: 3.2rem;
             margin: 0;
             color: var(--main-gold);
