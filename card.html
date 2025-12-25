@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بطاقة مطعم المصطفى</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Cairo', sans-serif; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; }
+        .card { background: #1a1a1a; color: white; width: 100%; max-width: 380px; padding: 30px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.4); border: 2px solid #c6a664; text-align: center; position: relative; overflow: hidden; }
+        .card::before { content: ""; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(198,166,100,0.1) 0%, transparent 70%); pointer-events: none; }
+        .logo-text { color: #c6a664; font-size: 2em; font-weight: 900; margin-bottom: 5px; letter-spacing: 1px; }
+        .tagline { color: #ccc; font-size: 1em; margin-bottom: 25px; border-bottom: 1px solid #c6a664; padding-bottom: 10px; display: inline-block; }
+        .info-container { margin-top: 10px; }
+        .info-row { display: flex; align-items: center; gap: 15px; margin: 18px 0; text-align: right; text-decoration: none; color: white; font-size: 1em; padding: 12px; border-radius: 12px; background: rgba(255,255,255,0.05); transition: 0.3s; border: 1px solid transparent; }
+        .info-row:hover { background: rgba(198,166,100,0.15); border-color: #c6a664; transform: translateY(-3px); }
+        .info-row i { color: #c6a664; width: 25px; font-size: 1.3em; text-align: center; }
+        .web-link { color: #c6a664; font-weight: bold; font-size: 0.9em; }
+        .footer-note { margin-top: 25px; font-size: 0.85em; color: #888; font-style: italic; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="logo-text">مطعم المصطفى</div>
+    <div class="tagline">للمأكولات الشعبية والموصلية</div>
+
+    <div class="info-container">
+        <a href="tel:07718723682" class="info-row">
+            <i class="fas fa-phone-alt"></i>
+            <span>07718723682</span>
+        </a>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=مطعم+المصطفى+الوشاش+بغداد0" target="_blank" class="info-row">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>بغداد - الوشاش - شارع 10</span>
+        </a>
+
+        <a href="https://www.facebook.com/share/1A9N2AoAkZ/" target="_blank" class="info-row">
+            <i class="fab fa-facebook-f"></i>
+            <span>تابعونا على فيسبوك</span>
+        </a>
+
+        <a href="https://ronal10ali10.github.io/almustafa-restaurant/" target="_blank" class="info-row">
+            <i class="fas fa-utensils"></i>
+            <span class="web-link">تصفح المنيو والأسعار أونلاين</span>
+        </a>
+    </div>
+
+    <div class="footer-note">نعتز بخدمتكم دائماً</div>
+</div>
+
+</body>
+</html>
